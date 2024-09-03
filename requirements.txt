@@ -1,2 +1,8 @@
 streamlit
-openai
+pandas
+psycopg2
+requests
+matplotlib
+numpy
+datetime
+plotly

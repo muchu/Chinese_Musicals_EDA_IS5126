@@ -1,0 +1,41 @@
+
+import requests
+import pandas as pd
+
+fieids_url = {
+"artists" : "http://y.saoju.net/yyj/api/artist/",
+"produces" : "http://y.saoju.net/yyj/api/produce/",
+"musicals":"http://y.saoju.net/yyj/api/musical/",
+"musicalproduces":"http://y.saoju.net/yyj/api/musicalproduces/",
+"citys" : "http://y.saoju.net/yyj/api/city/",
+"theatres":"http://y.saoju.net/yyj/api/theatre/", #这里的theatre要删掉location这个foreign key
+"stages":"http://y.saoju.net/yyj/api/stage/"
+}
+
+def main():
+    data_dict = {}
+    request_all_data(data_dict)
+    save_all2csv(data_dict)
+
+
+
+def request_all_data(data_dict:dict):
+    for key in fieids_url.keys():
+        response = requests.get(fieids_url[key])
+        if response.status_code == 200:
+            print(f"successfully request on {fieids_url[key]}, status code {response.status_code}.")
+            data_dict[key] = pd.json_normalize(response.json())
+        else:
+            print(f"Error occur when requesting {fieids_url[key]}, status code {response.status_code}.")
+    
+
+def save_all2csv(data_dict:dict):
+    for key in data_dict.keys():
+        data_dict[key].to_csv(f"../original_data/{key}")
+
+
+
+if __name__ == "__main__":
+    main()
+    print("successfully get all data")
+

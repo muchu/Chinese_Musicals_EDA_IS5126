@@ -1,0 +1,517 @@
+,model,pk,fields.name,fields.is_original,fields.progress,fields.premiere_date,fields.premiere_date_text,fields.info
+0,yyj.musical,1,I LOVE YOU…,False,SS,2006-12-09,,"百老汇音乐剧中文版
+全名《I Love You, You’re Perfect, Now Change!》
+原著/歌词：乔·迪皮尔特欧 Joe DiPietro
+音乐：杰米·罗伯茨 Jimmy Roberts，James Hammerstein，Bernie Kukoff 和Jonathan Pollard 于纽约首创 
+原创导演：乔伊·比肖夫 Joel Bishoff
+原创制作公司：American Stage Company"
+1,yyj.musical,2,空中花园谋杀案,True,SS,2009-05-26,,
+2,yyj.musical,3,我，堂吉诃德,False,SS,2015-12-18,,"百老汇经典音乐剧中文版
+原版作者：
+剧本：戴尔·沃瑟曼 Dale Wasserman
+词作者：乔·达利安 Joe Darion
+曲作者：米奇·雷 Mitch Leigh"
+3,yyj.musical,4,我的遗愿清单,False,SS,2017-08-08,,"原版韩国
+制作人：姜秉沅
+制作出品：LIVE Corp.
+作曲：金潓成"
+4,yyj.musical,5,我变了我没变,True,SS,2018-01-06,,
+5,yyj.musical,6,近乎正常,False,SS,2018-08-03,,"原版美国
+作曲 汤姆·基特 TOM KITT
+编剧及作词 布赖恩·约克 BRIAN YORKEY"
+6,yyj.musical,7,白夜行,True,SS,2018-11-30,,"官方授权：株式会社集英社
+原作：东野圭吾"
+7,yyj.musical,8,袁隆平,True,SS,2017-06-18,,
+8,yyj.musical,9,献给阿尔吉侬的花束,False,SS,2019-12-11,,"原版韩国
+原版剧本/导演 李泫圭
+作曲/音乐总监 张少瑛"
+9,yyj.musical,10,FLAMES火焰,False,SS,2019-12-24,,原版英国，悬疑音乐剧
+10,yyj.musical,11,阿波罗尼亚,False,SS,2020-08-28,,"原版韩国，环境式音乐剧
+原版剧本 李熙俊
+作曲 朴贤淑
+编曲 Uhm Da Hea"
+11,yyj.musical,12,灵魂摆渡之永生,True,SS,2020-11-27,,"改编自影视剧《灵魂摆渡》
+原著 小吉祥天"
+12,yyj.musical,13,两个人的谋杀,False,SS,2020-12-10,,"原版美国
+编剧/音乐：乔·基诺锡安
+编剧/歌词：科伦·布莱尔"
+13,yyj.musical,14,小说,False,SS,2020-12-24,,"原版韩国，推理音乐剧
+原版编剧/作词：Sung, Jae Hyun
+原版作曲：Jung, Hye Jin
+韩国原版出品：HJ CULTURE"
+14,yyj.musical,15,桑塔露琪亚,False,SS,2021-04-30,,"原版韩国，环境式音乐剧
+编剧 Lee Hee Joon
+作曲 Park Hyun Suk"
+15,yyj.musical,16,宇宙大明星,False,SS,2021-05-06,,原版韩国
+16,yyj.musical,17,灯塔,True,SS,2021-06-02,,立体环境式音乐剧
+17,yyj.musical,18,也许美好结局,False,SS,2021-06-27,,"原版韩国
+编剧：威尔·阿伦森 & 朴千休
+作词：朴千休
+作曲：威尔·阿伦森"
+18,yyj.musical,19,伪装者,True,SS,2021-09-15,,
+19,yyj.musical,20,无法访问,True,SS,2021-11-04,,沉浸式近景音乐剧
+20,yyj.musical,21,南唐后主,True,SS,2021-11-06,,
+21,yyj.musical,22,人间失格,True,SS,2021-12-10,,
+22,yyj.musical,23,Little Jack小杰克,False,SS,2021-12-21,,"原版韩国，环境式音乐剧
+原版音乐剧制作: HJ CULTURE
+原作编剧:Ok, Kyung Sun
+原版作曲: Damiro"
+23,yyj.musical,24,粉丝来信,False,SS,2022-01-13,,"原版韩国
+原版制作人：姜秉沅
+原版制作出品：LIVE corp.
+编剧：韩在恩
+作曲：朴贤淑"
+24,yyj.musical,25,有一天,True,SS,2022-02-25,,
+25,yyj.musical,26,致命旋律,False,SS,2022-03-06,,"原版韩国，钢琴LIVE。
+编剧/作曲/作词：Damiro"
+26,yyj.musical,27,一封陌生女人的来信,True,SS,2022-03-26,,改编自茨威格同名短篇小说
+27,yyj.musical,28,异想天开,False,SS,2023-04-29,,"百老汇音乐剧《The Fantasticks》中文版
+编剧&作词：Tom Jones
+作曲：Harvey Schmidt"
+28,yyj.musical,29,熊猫,True,SS,2022-04-29,,主题驻场音乐剧
+29,yyj.musical,30,苏东坡,True,SS,2022-05-04,,
+30,yyj.musical,31,摘星辰,True,SS,2022-07-01,,
+31,yyj.musical,32,沉默的真相,True,SS,2022-07-15,,原著作者：紫金陈
+32,yyj.musical,33,致爱,True,SS,2021-04-09,,灵感来源于 A.R. Gurney 话剧作品《Love Letters》
+33,yyj.musical,34,银河铁道之夜,False,SS,2022-07-29,,"原版韩国
+原著：宫泽贤治 [日]
+版权致谢：Double K ENTERTAINMENT
+编剧｜作词：成鐘完
+作曲：李洲元"
+34,yyj.musical,35,威尼斯商人,True,SS,2022-08-05,,"环境式音乐剧
+原著 莎士比亚"
+35,yyj.musical,36,我在时间尽头等你,True,SS,2022-08-10,,改编自郑执同名原著小说
+36,yyj.musical,37,星际信使,False,SS,2022-08-13,,"原版韩国
+编剧&作词：白承祐
+作曲&作词：李宥姃"
+37,yyj.musical,38,青春禁忌游戏,True,SS,2022-09-01,,"原著【俄罗斯】：柳德米拉·拉祖莫夫斯卡娅
+原著译者：童宁"
+38,yyj.musical,39,绽放,True,SS,2022-09-07,,
+39,yyj.musical,40,翻国王棋,True,SS,2022-09-27,,环境式驻演音乐剧
+40,yyj.musical,41,斜杠进化论,True,SS,2022-09-30,,上海文化发展基金会资助项目
+41,yyj.musical,42,三里屯42号,True,SS,2022-10-01,,
+42,yyj.musical,43,香水之谜,True,SS,2022-10-01,,双环境式音乐剧
+43,yyj.musical,44,白夜追凶,True,SS,2022-10-14,,原著作者：指纹
+44,yyj.musical,45,安娜·卡列尼娜,False,SS,2022-10-15,,"原版俄罗斯
+编剧：尤利·金
+作曲：罗曼·伊格纳季耶夫 
+导演：阿丽娜·切维克 
+编舞：伊琳娜·科尔涅耶娃
+音乐总监：康斯坦丁·赫瓦特涅茨
+舞美/服装设计：维亚切斯拉夫·奥库涅夫
+灯光设计：格列勃·费里施金斯基 
+化妆造型设计：安德烈·德雷金"
+45,yyj.musical,46,卡拉马佐夫兄弟,False,SS,2022-10-28,,"原版韩国
+编剧：金经柱
+作曲：李珍旭"
+46,yyj.musical,47,聊斋·画皮,True,SS,2022-11-04,,东方魔幻音乐剧
+47,yyj.musical,48,最美的一天,False,SS,2022-11-05,,中国台湾新生代音乐剧创作团队“C MUSICAL”授权出品
+48,yyj.musical,49,唐朝诡事录之曼陀罗,True,SS,2022-11-11,,
+49,yyj.musical,50,基督山伯爵,False,SS,2022-12-02,,"原版俄罗斯
+编剧：尤利·金
+作曲：罗曼·伊格纳季耶夫
+舞台导演：阿丽娜·谢维克
+编舞：伊瑞娜·科尼耶娃
+舞台服装设计：维亚切斯拉夫·奥库涅夫
+灯光设计：格莱布·菲尔什廷斯基
+化妆造型设计：安德烈·德莱金
+灯光总监：亚历山大·西瓦耶夫
+合唱指导：娜塔莉亚·西多尔佐娃
+助理编舞：乌利亚娜·巴切尔尼科娃 弗拉迪斯拉夫·努内斯·罗密欧"
+50,yyj.musical,51,狄俄尼索斯,True,SS,2023-01-05,,
+51,yyj.musical,52,莎翁乐园,False,SS,2022-12-24,,"原版韩国
+编剧·作词：Kim, Han-sol
+作曲·编曲：Kim, Chee-young
+舞美设计：Lee, Eunkyung
+灯光设计：Lee, Joowonh
+服装设计：Kim, Eunyoung
+道具设计：Noh, Juyeonn"
+52,yyj.musical,53,蝶变,True,SS,2023-01-06,,民国悬疑
+53,yyj.musical,54,辛吉路的画材店,True,SS,2023-02-25,,
+54,yyj.musical,55,道林格雷的画像,False,SS,2023-03-03,,"原版韩国
+原版制作 PAGE1 & CJES ENTERTAINMENT
+编刷 李智娜（Gina Lee）
+作曲 金紋延
+编曲 Jason Howland、具珉京"
+55,yyj.musical,56,猎罪图鉴,True,SS,2023-03-10,,
+56,yyj.musical,57,狗和猫的时间,False,SS,2023-03-17,,"原版韩国
+版权致谢
+ATEOD Corporation
+编剧/作词：韩在恩
+作曲：朴贤淑"
+57,yyj.musical,58,传说,True,SS,2023-04-15,,
+58,yyj.musical,59,城堡,False,SS,2023-04-28,,"原版韩国
+版权致谢 DOUBLE K ENTERTAIMENT
+编剧/作词 KIM SUNMI
+作曲/编曲 许秀贤"
+59,yyj.musical,60,觉醒年代,True,SS,2023-04-28,,
+60,yyj.musical,61,剧院魅影,False,SS,2023-05-02,,世界巡演版
+61,yyj.musical,62,一出好戏,True,SS,2023-05-05,,
+62,yyj.musical,63,哈姆雷特,True,SS,2023-05-11,,"原著：威廉·莎士比亚【英】
+中译：梁实秋"
+63,yyj.musical,64,理想之城,True,SS,2023-05-26,,
+64,yyj.musical,65,南墙计划,True,SS,2023-05-26,,
+65,yyj.musical,66,愚公移山,True,SS,2023-05-27,,
+66,yyj.musical,67,嗜血博士,True,SS,2023-06-08,,沉浸式悬疑惊悚音乐剧
+67,yyj.musical,68,女神在看,False,SS,2023-06-09,,原版韩国
+68,yyj.musical,69,审判日,True,SS,2021-11-26,,
+69,yyj.musical,70,阿尔托，梵高,False,SS,2023-07-01,,"原版韩国，环境式音乐剧
+版权致谢 Never Ending Play
+原版制作人：崔钟赫
+编剧：边荣真
+作曲：Damiro
+舞台设计：南景植"
+70,yyj.musical,71,杨戬,True,SS,2023-11-04,,
+71,yyj.musical,72,将进酒,True,SS,2023-09-21,,
+72,yyj.musical,73,星辰,True,SS,2023-09-28,,北京文化艺术基金2022年度资助项目
+73,yyj.musical,74,月亮与六便士,True,SS,2018-08-16,,根据威廉· 萨默赛特·毛姆原作《月亮与六便士》改编
+74,yyj.musical,75,呼救HELP,True,SS,2022-09-03,,沉浸式惊悚悬疑音乐剧
+75,yyj.musical,76,阴天,False,SS,2022-07-22,,"原版韩国
+编剧/原版导演：成鍾完
+作曲/原版音乐总监：金殷英
+舞台/道具设计：林奎養
+服装设计：金度沇
+妆发设计：金民京"
+76,yyj.musical,77,#0528,True,SS,2023-11-18,,环境式驻演音乐剧
+77,yyj.musical,79,少年歌行·梵音谣,True,SS,2023-07-15,,古装武侠环境式音乐剧
+78,yyj.musical,80,拉齐尼·巴依卡,True,SS,2022-04-22,,
+79,yyj.musical,81,蝶,True,SS,2007-09-11,,李盾制作、三宝作曲
+80,yyj.musical,83,危险游戏,False,SS,2016-07-01,,外百老汇悬疑音乐剧中文版
+81,yyj.musical,84,来自月亮的你,False,SS,2024-03-23,,"改编自韩国音乐剧the Musical Moon Story
+原版导演 Sung Jong Wan
+原版作曲 Kim Eun Young"
+82,yyj.musical,85,侠影·咏春,True,SS,2023-05-13,,
+83,yyj.musical,86,天蓝海蓝,True,SS,2023-04-16,,
+84,yyj.musical,87,爱，死机了,True,SS,2023-01-07,,"原名《宇宙尽头的你》
+原作者：Carrot
+编剧/作词：Park Hae-rim
+作曲：Yi Min-ha
+编曲：Yi Min-ha Andy@Nouveau Music Piah@Nouveau Music
+原版制作公司：音乐剧 Normal Like This 由PARK Company Co., Ltd. 特别呈现"
+85,yyj.musical,88,流光时代,True,SS,2022-11-12,,全景沉浸式音乐剧
+86,yyj.musical,89,人鬼情未了,False,SS,2021-11-13,,原版美国
+87,yyj.musical,90,摇滚年代,False,SS,2018-01-05,,原版美国
+88,yyj.musical,91,赵氏孤儿,True,SS,2021-05-27,,"原著/纪君祥
+话剧改编/詹姆斯·芬顿
+中译/金圣华、彭镜禧"
+89,yyj.musical,92,夜半歌声,True,SS,2022-12-28,,
+90,yyj.musical,93,妈妈咪呀！,False,SS,2011-07-08,,原版英国
+91,yyj.musical,94,谋杀歌谣,False,SS,2017-07-05,,原版美国
+92,yyj.musical,95,音乐之声,False,SS,2016-09-03,,原版美国
+93,yyj.musical,96,猫,False,SS,2012-08-17,,原版英国
+94,yyj.musical,97,堕落天使,False,SS,2022-08-26,,原版韩国
+95,yyj.musical,98,稳稳的幸福,True,SS,2013-11-20,,
+96,yyj.musical,99,德米安,False,SS,2024-05-17,,"版权方：Nangman Barricade
+原作：赫尔曼·黑塞（德）
+导演/编剧：吴世赫（韩）
+作曲：DAMIRO（韩）"
+97,yyj.musical,100,等你爱我,True,SS,2014-08-23,,
+98,yyj.musical,101,因为爱情2,True,SS,2015-03-21,,
+99,yyj.musical,102,唐人街探案1,True,SS,2023-10-29,,根据陈思诚导演作品改编
+100,yyj.musical,103,梦微之,True,SS,2023-08-11,,环境式古风音乐剧
+101,yyj.musical,104,钢的琴,True,SS,2012-10-24,,原著：张猛
+102,yyj.musical,105,摇滚莫扎特,False,SS,2023-11-03,,原版法国
+103,yyj.musical,106,Q大道,False,SS,2013-10-16,,原版美国
+104,yyj.musical,107,帅小伙的蔬果店,False,SS,2019-11-21,,原版韩国
+105,yyj.musical,108,陪你倒数,False,SS,2021-04-02,,原版美国
+106,yyj.musical,109,梵高,False,SS,2017-09-30,,原版韩国
+107,yyj.musical,110,信,False,SS,2018-10-04,,原版日本
+108,yyj.musical,111,涩女郎,True,SS,2020-02-13,,
+109,yyj.musical,112,如果,True,SS,2015-12-22,,
+110,yyj.musical,113,我和我的雷锋,True,SS,2024-06-07,,
+111,yyj.musical,114,雄狮少年,True,SS,2024-01-11,,
+112,yyj.musical,115,水曜日,False,SS,2018-12-31,,原版韩国
+113,yyj.musical,116,LIZZIE丽兹,False,SS,2023-07-04,,原版美国
+114,yyj.musical,117,面试,False,SS,2019-12-19,,原版韩国
+115,yyj.musical,118,摇滚浮士德,False,SS,2021-05-24,,原版韩国
+116,yyj.musical,119,TRACE U,False,SS,2023-11-04,,"原版韩国
+原版制作公司 STUDIOSUNDAY Co.. Ltd.
+原版导演 Daljoong Kim
+编剧/作词 Geeyul Yun
+作曲 Jeong A Park"
+117,yyj.musical,120,拉赫玛尼诺夫,False,SS,2018-11-26,,原版韩国
+118,yyj.musical,121,春之觉醒,False,SS,2020-01-10,,原版美国
+119,yyj.musical,122,变身怪医,False,SS,2017-07-28,,原版美国
+120,yyj.musical,123,马不停蹄的忧伤,True,SS,2018-09-04,,
+121,yyj.musical,124,马不停蹄的忧伤Ⅱ,True,SS,2022-03-04,,
+122,yyj.musical,127,时光代理人·法则游戏,True,SS,2024-05-01,,街舞音乐剧
+123,yyj.musical,128,烟雾,False,SS,2021-04-08,,"原版韩国
+原版导演/编剧：秋廷和
+作曲：许秀贤"
+124,yyj.musical,129,第一次约会,False,SS,2020-11-07,,原版美国
+125,yyj.musical,130,贝多芬,False,SS,2020-12-22,,原版韩国
+126,yyj.musical,131,兰波,False,SS,2018-12-05,,原版韩国
+127,yyj.musical,132,快把我哥带走,True,SS,2019-12-25,,
+128,yyj.musical,133,周生如故,True,SS,2023-08-18,,"改编自小说 《一生一世，美人骨》
+爱奇艺自制剧集《周生如故》
+原著 墨宝非宝"
+129,yyj.musical,134,生死签,True,SS,2021-06-05,,
+130,yyj.musical,135,梦见狮子,True,SS,2021-08-03,,
+131,yyj.musical,136,魔女宅急便,False,SS,2020-05-29,,原版日本
+132,yyj.musical,137,I DO！I DO！,False,SS,2018-04-06,,原版美国
+133,yyj.musical,138,长腿叔叔,False,SS,2018-05-04,,"原版美国
+作曲及作词 保罗·戈顿
+编剧 约翰·卡尔德
+根据简·韦伯斯特小说改编
+国际版权方：MTI"
+134,yyj.musical,139,深夜食堂,True,SS,2018-10-09,,
+135,yyj.musical,140,吉屋出租,False,SS,2019-11-30,,原版美国
+136,yyj.musical,141,在远方,True,SS,2020-12-24,,
+137,yyj.musical,142,洗衣服,False,SS,2016-06-23,,原版韩国
+138,yyj.musical,143,寻找初恋,False,SS,2013-06-06,,原版韩国
+139,yyj.musical,144,福尔摩斯：安德森家的秘密,False,SS,2021-11-11,,原版韩国
+140,yyj.musical,145,琵琶行,True,SS,2021-07-03,,"国风音乐剧
+原著：白居易"
+141,yyj.musical,147,春上海1949,True,SS,2019-10-01,,
+142,yyj.musical,148,忠诚,True,SS,2021-07-09,,
+143,yyj.musical,149,摇滚太白·诗与星,True,SS,2023-09-22,,
+144,yyj.musical,150,吸血鬼亚瑟,False,SS,2022-07-24,,"原版韩国
+编剧：So Whiwon
+作曲：Kim Dree
+改编：Park Hae Rim"
+145,yyj.musical,151,阿加莎,False,SS,2021-12-22,,"原版韩国
+编剧 Han Ji Ahn
+作曲 Heo Soo Hyun
+导演 孙智恩
+服装设计 An Hyun Ju"
+146,yyj.musical,152,使命必达,True,SS,2021-07-24,,
+147,yyj.musical,153,四两青春,True,SS,2017-12-07,,原名《繁花尽落的青春》
+148,yyj.musical,154,投我一票 梦想无穷,True,SS,2022-11-04,,
+149,yyj.musical,155,下天风,True,SS,2024-01-21,,根据同名小说改编
+150,yyj.musical,156,小时代,False,SS,2015-05-07,,
+151,yyj.musical,157,蛋壳里的心跳,True,SS,2020-09-19,,"2020年为1.0版
+2021年升级为《蛋壳里的心跳2021》"
+152,yyj.musical,158,爱在星光里,True,SS,2018-11-08,,
+153,yyj.musical,159,雪狼湖,True,SS,1997-03-28,,2004年改编国语版
+154,yyj.musical,160,文成公主,True,SS,2012-10-10,,
+155,yyj.musical,161,又见桃花红,True,SS,2015-10-28,,
+156,yyj.musical,162,桃花笺,True,SS,2016-10-12,,
+157,yyj.musical,163,麦琪的礼物,True,SS,2016-12-06,,
+158,yyj.musical,164,牵魂线,True,SS,2018-04-03,,漫瀚调音乐剧
+159,yyj.musical,165,黄四姐,True,SS,2015-11-24,,土家乡村音乐剧
+160,yyj.musical,166,火花,True,SS,2015-10-22,,
+161,yyj.musical,167,情动哈尔滨,True,SS,2013-08-26,,
+162,yyj.musical,168,恋爱吧！人类,True,SS,2018-07-12,,
+163,yyj.musical,169,过去五年,False,SS,2017-12-22,,原版美国
+164,yyj.musical,170,金沙,True,SS,2005-04-08,,
+165,yyj.musical,171,醉后赢家,True,SS,2019-11-01,,
+166,yyj.musical,172,再见·Echo,True,SS,2021-11-25,,
+167,yyj.musical,173,虎门销烟,True,SS,2016-11-08,,
+168,yyj.musical,174,王二的长征,True,SS,2013-11-23,,
+169,yyj.musical,175,罗密欧与朱丽叶,False,SS,2021-11-26,,原版法国
+170,yyj.musical,176,孙伯符,True,SS,2023-07-15,,
+171,yyj.musical,177,嘿！亚利桑那,False,SS,2022-12-01,,"原版韩国
+编剧/作词:SungJong Wan
+作曲: Kim Eun Young"
+172,yyj.musical,178,三星堆,True,SS,2023-10-14,,
+173,yyj.musical,179,悟空,True,SS,2020-11-20,,
+174,yyj.musical,180,西厢,True,SS,2018-08-17,,
+175,yyj.musical,181,拜访森林,False,SS,2014-11-08,,原版美国，曾译名《森林诱惑》
+176,yyj.musical,182,隐婚男女,True,SS,2017-11-15,,
+177,yyj.musical,183,我知道你会来，所以我等,True,SS,2020-11-20,,
+178,yyj.musical,184,新华报童,True,SS,2021-04-30,,
+179,yyj.musical,185,寻找家人,False,SS,2021-10-01,,原版韩国
+180,yyj.musical,186,在那遥远的地方2514,True,SS,2021-05-20,,
+181,yyj.musical,187,家,True,SS,2021-07-30,,原著：巴金
+182,yyj.musical,188,闪闪的红星,True,SS,2021-10-28,,根据李心田同名长篇小说改编
+183,yyj.musical,189,花落花开,True,SS,2020-11-28,,
+184,yyj.musical,190,速记员,True,SS,2021-07-02,,
+185,yyj.musical,191,未来组合,True,SS,1999-03-01,1999年3月,
+186,yyj.musical,192,摇滚·西厢,True,SS,2015-06-05,,
+187,yyj.musical,193,未来组合2008,True,SS,2009-05-20,,
+188,yyj.musical,194,阿尔兹记忆的爱情,True,SS,2017-04-05,,
+189,yyj.musical,195,花儿与少年,True,SS,2009-06-17,,
+190,yyj.musical,196,双城环梦记,True,SS,2021-06-12,,
+191,yyj.musical,197,重生,True,SS,2020-09-24,,
+192,yyj.musical,198,One More,False,SS,2021-12-09,,原版韩国
+193,yyj.musical,199,金鸣歌厅,True,SS,2023-08-11,,
+194,yyj.musical,200,迷雾山庄,False,SS,2023-06-16,,"环境式悬疑音乐剧
+改编自HONG Company Co., Ltd. 音乐剧 The moment
+原版作者：Pyo, Sang-A
+原版制作人：Hong Seunghee
+作曲：Kim Yeowooree"
+195,yyj.musical,201,京·谣,True,SS,2023-05-24,,
+196,yyj.musical,202,聂小倩与宁采臣,True,SS,2014-12-06,,
+197,yyj.musical,203,求婚女王,False,SS,2018-12-06,,"改编自C MUSICAL制作《焢肉，遇见你》
+原版编剧/词曲 张芯慈"
+198,yyj.musical,204,嫌疑人X的献身,True,SS,2023-08-18,,"原作 东野圭吾
+企画协力 文艺春秋"
+199,yyj.musical,205,恋曲,True,SS,2023-06-09,,
+200,yyj.musical,206,亲爱的,False,SS,2023-09-28,,原版泰国，根据Bird Thongchai经典曲目创作
+201,yyj.musical,207,无人岛,False,SS,2023-07-28,,"原版韩国
+作曲：朴仁榮/林俊亨"
+202,yyj.musical,208,超时空同居,True,SS,2023-07-28,,同名电影改编
+203,yyj.musical,209,Ordinary Days 不·平凡的日子,False,SS,2023-06-21,,"外百老汇环境式治愈音乐剧
+作曲 & 作词：Adam Gwon
+版权管理：Concord Theatricals"
+204,yyj.musical,210,我的魔法药水,True,SS,2023-09-02,,环境式驻演音乐剧
+205,yyj.musical,211,Hi Hi 莎士比亚,False,SS,2023-04-21,,"原著编剧:方俊杰
+作曲:张贝琳
+英文原作歌词: Banjamin S.Robinson"
+206,yyj.musical,212,今生有约,True,SS,2024-04-18,,
+207,yyj.musical,213,秋山吟,True,SS,2023-06-14,,"“国潮”音乐剧
+原名《风月同天》
+上海文化发展基金会重大文艺创作项目"
+208,yyj.musical,214,想把我唱给您听,True,SS,2019-12-24,,
+209,yyj.musical,215,双重危机,False,SS,2023-06-21,,"原版美国
+原版剧本/作曲/作词 Bob Walton & jim Walton"
+210,yyj.musical,216,Time Share House狂想曲,True,SS,2021-12-24,,环境式奇幻音乐戏剧
+211,yyj.musical,217,恋爱轻飘飘,True,SS,2002-12-31,2002年,
+212,yyj.musical,218,风刃,True,SS,2022-12-07,,
+213,yyj.musical,219,Amanda的三十八岁生日,True,SS,2022-10-21,,
+214,yyj.musical,220,47,False,SS,2024-06-08,,"原版韩国
+编剧 朴民宰
+作曲 金治荣"
+215,yyj.musical,221,独行月球,True,SS,2023-08-03,,"改编自咚漫漫面独家作品《MOONYOU-独行月球》
+作者：赵石"
+216,yyj.musical,222,烽火家书,True,SS,2021-06-16,,
+217,yyj.musical,223,消失的她,True,SS,2024-08-07,,
+218,yyj.musical,224,飞天,True,SS,2024-04-25,,
+219,yyj.musical,225,浮生六记,True,SS,2021-05-26,,"唯美实验音乐剧
+原著：【清】沈复"
+220,yyj.musical,226,火蔷薇,True,SS,2021-12-31,,沉浸式小酒馆音乐live秀
+221,yyj.musical,227,当爱已成往事,True,SS,2019-11-22,,
+222,yyj.musical,228,苏州河北岸,False,SS,2023-03-21,,
+223,yyj.musical,229,渔家,True,SS,2023-04-04,,渔歌音乐剧
+224,yyj.musical,230,广交天下,True,SS,2023-04-15,,
+225,yyj.musical,231,朝暮有情人,True,SS,2017-03-04,,
+226,yyj.musical,232,三毛流浪记,True,SS,2011-07-16,,
+227,yyj.musical,233,灰姑娘,False,SS,2018-05-24,,百老汇音乐剧中文版
+228,yyj.musical,234,追光巨星,True,SS,2023-07-14,,国潮光系沉浸式音乐剧
+229,yyj.musical,235,何处春江无月明,True,SS,2023-07-28,,国家艺术基金2020年度传播交流推广资助、彩票公益金资助
+230,yyj.musical,236,AI,True,SS,2023-12-24,,沉浸式音乐剧，根据同名话剧改编
+231,yyj.musical,237,丝路之声,True,SS,2021-07-23,,
+232,yyj.musical,238,这里冬天不下雪,True,SS,2022-06-24,,
+233,yyj.musical,239,瓶中的大海,True,SS,2023-04-05,,原创实验音乐剧
+234,yyj.musical,240,富春璧合,True,SS,2022-07-17,,2022年度福建省舞台艺术精品工程重点剧目
+235,yyj.musical,241,约定·香奈儿,True,SS,2021-08-13,,
+236,yyj.musical,242,南孔,True,SS,2023-08-28,,
+237,yyj.musical,243,花儿与号手,True,SS,2018-03-19,,
+238,yyj.musical,244,我的两万个兄弟,True,SS,2021-08-25,,
+239,yyj.musical,245,青城山下,True,SS,2020-08-21,,
+240,yyj.musical,246,北京故事,True,SS,2021-06-19,,"2020年度舞台艺术创作资助项目
+彩票公益金资助-中国福利彩票和中国体育彩票"
+241,yyj.musical,247,爱情神话,True,SS,2023-10-05,,
+242,yyj.musical,248,时光旅行局意外事件,True,SS,2018-06-28,,
+243,yyj.musical,249,美女与野兽,False,SS,2018-06-14,,
+244,yyj.musical,250,再见，1990,True,SS,2019-06-12,,
+245,yyj.musical,251,21:00,True,SS,2023-09-29,,上海音乐学院学生原创沉浸式悬疑音乐剧
+246,yyj.musical,252,百万约定,True,SS,2015-12-24,,
+247,yyj.musical,253,纳尔齐斯与歌尔德蒙,False,SS,2023-09-29,,"原版韩国
+原作：赫尔曼·黑塞
+韩方导演/原版编剧：尹湘圆
+韩方作曲：Yoo Hannah
+原版舞美设计：金贞兰
+原版编舞：李钟赫"
+248,yyj.musical,254,江姐,True,SS,2022-09-23,,
+249,yyj.musical,255,消失,True,SS,2023-09-15,,"原版韩国
+版权致谢 NEO PRODUCTION
+编剧 韩在恩
+作曲 周美娜"
+250,yyj.musical,256,时光代理人,True,SS,2023-11-11,,改编自bilibili原创动画《时光代理人》
+251,yyj.musical,257,我爱沙坡尾,True,SS,2023-08-10,,"2023年度福建省舞台艺术精品工程重点剧目
+厦门市文艺发展专项资金
+2022年度舞台艺术创作资助项目"
+252,yyj.musical,258,爸爸的奇幻世界,False,SS,2023-10-01,,"原版韩国
+版权授权：DA' AT
+作曲：李珠熙
+编剧：姜宝英
+艺术总监：裴秀妍"
+253,yyj.musical,259,当你心动时,True,SS,2023-11-11,,
+254,yyj.musical,260,胭脂扣,True,SS,2024-04-07,,原创故事：李碧华
+255,yyj.musical,261,万万不能,True,SS,2016-11-19,,
+256,yyj.musical,262,春宵苦短，少女前进吧！,True,SS,2023-11-10,,
+257,yyj.musical,263,蔡文姬,True,SS,2023-09-29,,古琴音乐剧
+258,yyj.musical,264,我要你,True,SS,2024-03-17,,点唱机音乐剧
+259,yyj.musical,265,景迈有嘉木,True,SS,2023-10-01,,
+260,yyj.musical,266,诗经·采薇,True,SS,2018-10-20,,
+261,yyj.musical,267,还在路上,True,SS,2023-01-01,2023年,
+262,yyj.musical,268,牦牛革命,True,SS,2021-06-10,,
+263,yyj.musical,269,红色电波,True,SS,2022-10-27,,北京文化艺术基金2023年度资助项目
+264,yyj.musical,270,血色湘江,True,SS,2019-09-28,,
+265,yyj.musical,271,国之韶华,True,SS,2023-07-29,,
+266,yyj.musical,272,瞿秋白,True,SS,2021-11-20,,
+267,yyj.musical,273,不一样的焰火,True,SS,2018-05-18,,
+268,yyj.musical,274,平箫玉笛,True,SS,2023-01-04,,
+269,yyj.musical,275,没有共产党就没有新中国,True,SS,2021-06-28,,
+270,yyj.musical,276,不好意思！生不生娃让我好好想一想,True,SS,2023-11-24,,
+271,yyj.musical,278,玻璃猫鱼和科里奥利效应,True,SS,2023-12-28,,
+272,yyj.musical,279,刺秦,True,SS,2023-11-10,,
+273,yyj.musical,280,还“Ai”,True,SS,2023-10-23,,多元化音乐剧
+274,yyj.musical,281,双面奇才,True,SS,2023-12-29,,曾用名《嘻个啥子哈》
+275,yyj.musical,282,幸福的烟火,True,SS,2023-04-03,,
+276,yyj.musical,283,致青春,True,SS,2021-05-01,,
+277,yyj.musical,284,我们还能陪妈妈多久,True,SS,2018-12-08,,
+278,yyj.musical,285,艺术区,True,SS,2023-11-11,,
+279,yyj.musical,286,秋裤和擀面杖,True,SS,2017-10-19,,
+280,yyj.musical,287,蝶恋天山,True,SS,2022-07-29,,
+281,yyj.musical,288,彗星来电,False,SS,2023-12-31,,"百老汇音乐剧环境式中文版
+编剧/作曲/作词：Alex Wyse、Ben Fankhauser"
+282,yyj.musical,289,亦梦亦真,True,SS,2022-10-20,,
+283,yyj.musical,290,此心安处,True,SS,2023-11-26,,2023年度国家艺术基金扶持剧目
+284,yyj.musical,291,东莞东,True,SS,2023-12-02,,
+285,yyj.musical,292,那茶 那山 那一天,True,SS,2023-12-07,,刘三姐原型全新改编创作音乐剧
+286,yyj.musical,293,婚礼歌手,False,SS,2023-12-16,,"改编自百老汇音乐剧&同名电影
+Music Theatre International(MTI)独家授权
+作曲人 Matthew Sklar 马修·斯科拉尔
+作词人 Chad Beguelin 查德·贝格林
+剧作人 Tim Herlihy 蒂姆·赫利希"
+287,yyj.musical,294,百年青春,True,SS,2024-01-19,,北京市文联文学艺术创作扶持专项资金项目
+288,yyj.musical,295,拜风,True,SS,2023-12-29,,环境式驻演音乐剧
+289,yyj.musical,296,疯子与赞美诗,True,SS,2023-10-27,,轻音乐剧
+290,yyj.musical,297,鲜花盛开的地方,True,SS,2024-01-19,,
+291,yyj.musical,298,下一站爱人,True,SS,2021-05-29,,
+292,yyj.musical,299,花开河西巷,True,SS,2023-10-10,,
+293,yyj.musical,300,会社人间,True,SS,2012-01-17,2012年,
+294,yyj.musical,301,对位法,True,SS,2024-02-14,,
+295,yyj.musical,302,孤独城堡,True,SS,2024-03-08,,
+296,yyj.musical,303,桂花雨,True,SS,2009-08-07,,
+297,yyj.musical,304,梁祝的继承者们,True,SS,2014-05-20,2014年5月,
+298,yyj.musical,305,反转人生,True,SS,2024-05-17,,北京文化艺术基金2023年度资助项目
+299,yyj.musical,306,貂蝉，你在想什么？,True,SS,2024-05-17,,
+300,yyj.musical,307,光影少年,True,SS,2024-06-07,,
+301,yyj.musical,308,深处,True,SS,2024-04-25,,
+302,yyj.musical,309,狂炎奏鸣曲,False,SS,2024-07-06,,"韩方制作监督 李智娟
+导演 孙孝元
+编剧 郑珉娥
+作曲 DAMIRO"
+303,yyj.musical,310,雪拥蓝关,True,SS,2024-06-21,,"改编自同名畅销小说《雪拥蓝关》
+北京文化艺术基金2023年度资助项目"
+304,yyj.musical,311,国王游戏,True,SS,2017-05-04,,
+305,yyj.musical,312,逐梦,True,SS,2024-06-01,,
+306,yyj.musical,313,怪物,True,SS,2024-07-05,,
+307,yyj.musical,314,画中人,True,SS,2024-06-21,,
+308,yyj.musical,315,对鸟,True,SS,2024-07-27,,国家艺术基金资助项目
+309,yyj.musical,316,末日迷途,True,SS,2024-08-08,,强沉浸式末日灾难音乐剧
+310,yyj.musical,317,大江东去,True,SS,2024-07-06,,
+311,yyj.musical,318,稷下学宫——誉满天下,True,SS,2023-12-10,,
+312,yyj.musical,319,因味爱，所以爱,True,SS,2015-06-05,,
+313,yyj.musical,320,太阳黑子,True,DD,2024-10-11,,原著作者：须一瓜
+314,yyj.musical,321,Boom！夏卡拉卡,True,SS,2024-08-02,,原创轻科幻沉浸式音乐剧
+315,yyj.musical,322,星图,True,SS,2024-08-16,,
+316,yyj.musical,323,喜事喜事,True,SS,2024-08-08,,
+317,yyj.musical,324,命运之上,True,SS,2024-08-02,,
+318,yyj.musical,325,女侠请留步,True,SS,2024-08-17,,
+319,yyj.musical,326,穿越1839,True,SS,2024-07-04,,
+320,yyj.musical,327,走西口,True,SS,2024-07-18,,民歌音乐剧
+321,yyj.musical,328,北上,True,DD,2024-09-07,,"北京文化艺术基金2023年度资助项目
+茅盾文学奖作品改编
+原著：徐则臣"
+322,yyj.musical,329,寻梦沧海,True,SS,2024-02-24,,
+323,yyj.musical,330,OZ,False,DD,2024-09-12,,"原版制作 AMUSE ENT
+编剧/作词 Kim Sol Ji
+作曲 Mun So Hyun
+编曲 Yang Ji Hae & Ruve
+原版制作人 Kiyoyama Kozue"
+324,yyj.musical,331,决斗,False,DD,2024-10-01,,"原版编剧：Lee Heuijun
+原版作曲：Park Hyunsook"
+325,yyj.musical,332,黑凤梨（喜欢你）,True,DD,2024-10-02,,
+326,yyj.musical,333,小城之春,True,SS,2016-10-11,,"原著：李天济
+上海文化发展基金会舞台艺术资助项目"
+327,yyj.musical,334,我家门前有条河,True,SS,2024-01-13,,"国家艺术基金2024年度大型舞台剧资助项目
+彩票公益金资助一中国福利彩票和中国体育彩票
+山东省文旅厅2023年度舞台艺术重点选题创作作品
+齐鲁文艺高峰计划(首批)重点项目
+2022年度济南市舞台艺术创作重点扶持项目"
+328,yyj.musical,335,蓝士山河,True,DD,2024-09-27,,
+329,yyj.musical,336,画廊遗梦,True,SS,2023-09-15,,点唱机式音乐剧
