@@ -26,8 +26,8 @@ def get_table_data(cur:psycopg2.connect,table_names) -> dict :
     return df_list
 
 
-def use_sql_query(cur,sql_query:str):
-    cur.execute(sql_query)
+def use_sql_query(cur,sql_query:str,params=None):
+    cur.execute(sql_query,params)
     results = cur.fetchall()
     columns_name = [desc[0] for desc in cur.description]
         

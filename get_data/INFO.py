@@ -8,7 +8,7 @@ fieids_url = {
     "citys" : "http://y.saoju.net/yyj/api/city/",
     "theatres":"http://y.saoju.net/yyj/api/theatre/", #这里的theatre要删掉location这个foreign key
     "stages":"http://y.saoju.net/yyj/api/stage/",
-    
+    "shows":"http://y.saoju.net/yyj/api/search_day/?date={}"
 }
 
 columns_needed = {
@@ -43,7 +43,7 @@ database_schema = """
         name VARCHAR(30),
         is_original boolean,
         progress varchar(5),
-        premiere_data date,
+        premiere_date date,
         info varchar(300)
     );
     CREATE TABLE produces (
@@ -68,4 +68,12 @@ database_schema = """
         theatre_id INT,
         seats INT
     ); 
+    create table shows(
+    show_id SERIAL PRIMARY KEY,
+    date date,
+    city varchar(10),
+    musical varchar(50),
+    "cast" varchar(100),
+    theatre varchar(50)   
+)
 """
