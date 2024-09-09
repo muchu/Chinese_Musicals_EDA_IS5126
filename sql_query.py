@@ -57,3 +57,9 @@ ORDER BY
     city, year, month;
 
 """
+musical_list_by_date_range = """
+SELECT 
+*
+FROM shows
+WHERE date BETWEEN %s AND %s
+"""

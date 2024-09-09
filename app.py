@@ -1,6 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from data_tools import use_sql_query,connect_to_db
+from data_tools import use_sql_query,connect_to_db,get_table_data
 from sql_query import *
 import pandas as pd
 import plotly.graph_objects as go
@@ -79,106 +79,162 @@ fig.update_layout(
 st.plotly_chart(fig)
 
 #########Fig 2
-st.header("2. 音乐剧创作性质")
+st.header("2. Originality of Musical")
 # get data
-musical_original_df_2023 = use_sql_query(cur=st.session_state.cur, sql_query= original_musical_persentage_by_date_range,params=("2023-01-01","2023-12-31"))
-musical_original_df_2024 = use_sql_query(cur=st.session_state.cur, sql_query= original_musical_persentage_by_date_range,params=("2024-01-01","2024-12-31"))
-st.dataframe(musical_original_df_2023)
-fig = make_subplots(rows=1, cols=2,specs=[[{'type':'domain'}, {'type':'domain'}]],subplot_titles=("2023", "2024"))
-fig.add_trace(
-    go.Pie(name="Number of Theatres",labels=musical_original_df_2023["is_original"],values=musical_original_df_2023["count"]),
-    row=1, col=1
-)
-fig.add_trace(
-    go.Pie(name="Number of Theatres",labels=musical_original_df_2024["is_original"],values=musical_original_df_2024["count"]),
-    row=1, col=2
-)
-# 更新布局
-fig.update_layout(
-    title_text="Musical Creation Nature Comparison: 2023 vs 2024",
-    height=600,
-    width=1000,
-    legend_title="Original Status"
+musicals = get_table_data(cur=st.session_state.cur,table_names= ["musicals"] )["musicals"]
+
+musicals["premiere_date"] = pd.to_datetime(musicals["premiere_date"])
+musicals["year"] = musicals["premiere_date"].dt.year
+musicals = musicals[musicals["year"] > 2017]
+
+year_musical_df = pd.DataFrame(musicals.groupby("year").agg({
+    'musical_id': 'count',
+    'is_original': 'sum',
+}))
+year_musical_df["imitation_musical_number"] = year_musical_df["musical_id"] - year_musical_df["is_original"]
+year_musical_df["original_musical_ratio"] = year_musical_df["is_original"] / year_musical_df["musical_id"]
+year_musical_df.reset_index(inplace=True)
+
+fig_musical_originality = go.Figure()
+
+fig_musical_originality.add_trace(go.Bar(
+    x=year_musical_df["year"],
+    y=year_musical_df["musical_id"],
+    name="Total Musical",
+    marker=dict(color="#E91E63"),
+    yaxis="y2"
+
+))
+fig_musical_originality.add_trace(go.Scatter(
+    x=year_musical_df["year"],
+    y=year_musical_df["original_musical_ratio"],
+    name="original ratio",
+    mode='lines+markers',
+    marker=dict(color="#466b82"),
+    yaxis="y"
+))
+
+fig_musical_originality.update_layout(
+    title="Musical Originality by Year",
+    yaxis=dict(title="Original Ratio",side="right",overlaying="y2",range=[0,1]),
+    yaxis2=dict(title="Total Musical",side="left"),
+    legend=dict(x=1.1, y=1),
+    autosize=True,
+    xaxis=dict(title="Year"),
 )
 
-# 显示图表
-st.plotly_chart(fig)
+st.plotly_chart(fig_musical_originality)
+
+musical_2022 = musicals[(musicals["year"] == 2022) & (musicals["is_original"] == 0)]
+musical_2023 = musicals[(musicals["year"] == 2023) & (musicals["is_original"] == 0)]
+musical_2024 = musicals[(musicals["year"] == 2024) & (musicals["is_original"] == 0)]
+county_name = {
+    "Broadway":["百老汇"],
+    "American":["美国"],
+    "Korea":["韩国","韩","韩方"],
+    "Thailand":["泰国"],
+    "Russia":["俄罗斯"],
+    "France":["法国"],
+    "Japan":["日本"],
+    "Other":["其他"]
+}
+
+for key, value in county_name.items():
+    musical_2022["info_country"] = musical_2022["info"].apply(lambda x: key if any(v in x for v in value) else musical_2022.loc[musical_2022["info"] == x, "info_country"].iloc[0] if "info_country" in musical_2022.columns else x)
+    musical_2023["info_country"] = musical_2023["info"].apply(lambda x: key if any(v in x for v in value) else musical_2023.loc[musical_2023["info"] == x, "info_country"].iloc[0] if "info_country" in musical_2023.columns else x)
+    musical_2024["info_country"] = musical_2024["info"].apply(lambda x: key if any(v in x for v in value) else musical_2024.loc[musical_2024["info"] == x, "info_country"].iloc[0] if "info_country" in musical_2024.columns else x)
+musical_2022["info_country"] = musical_2022["info_country"].apply(lambda x: x if x in county_name.keys() else "Other")
+musical_2023["info_country"] = musical_2023["info_country"].apply(lambda x: x if x in county_name.keys() else "Other")
+musical_2024["info_country"] = musical_2024["info_country"].apply(lambda x: x if x in county_name.keys() else "Other")
+
+# pie chart to describe the proportion of imitation musicals by country
+# subplot
+
+fig_musical_imitation_country = make_subplots(rows=1, cols=3, subplot_titles=["2022", "2023", "2024"], specs=[[{'type':'pie'}, {'type':'pie'}, {'type':'pie'}]])
+#change color, do not use likely color  
+colors = ["#FFA15A", "#FFB470", "#FFC49C", "#FFD6AA", "#FFE6CC", "#FFF2E0"]
+fig_musical_imitation_country.add_trace(go.Pie(
+    labels=musical_2022["info_country"].value_counts().index,
+    values=musical_2022["info_country"].value_counts().values,
+    name="2022",
+    marker=dict(colors=colors)
+), row=1, col=1)
+
+fig_musical_imitation_country.add_trace(go.Pie(
+    labels=musical_2023["info_country"].value_counts().index,
+    values=musical_2023["info_country"].value_counts().values,
+    name="2023",
+    marker=dict(colors=colors)
+), row=1, col=2)
+
+fig_musical_imitation_country.add_trace(go.Pie(
+    labels=musical_2024["info_country"].value_counts().index,
+    values=musical_2024["info_country"].value_counts().values,
+    name="2024",
+    marker=dict(colors=colors)
+), row=1, col=3)
+
+fig_musical_imitation_country.update_layout(
+
+    title="Imitation Musical by Country",
+    legend=dict(x=1.1, y=1),
+    autosize=True
+)
+
+st.plotly_chart(fig_musical_imitation_country)
 
 #####Fig3
-st.header("3. 不同城市表演月份分布")
+st.header("3. Trending of performances in Shanghai and Beijing")
 
-month_date_list_2023 = {
-
-    "January": ("2023-01-01", "2023-01-31"),
-    "February": ("2023-02-01", "2023-02-28"),
-    "March": ("2023-03-01", "2023-03-31"),
-    "April": ("2023-04-01", "2023-04-30"),
-    "May": ("2023-05-01", "2023-05-31"),
-    "June": ("2023-06-01", "2023-06-30"),
-    "July": ("2023-07-01", "2023-07-31"),
-    "August": ("2023-08-01", "2023-08-31"),
-    "September": ("2023-09-01", "2023-09-30"),
-    "October": ("2023-10-01", "2023-10-31"),
-    "November": ("2023-11-01", "2023-11-30"),
-    "December": ("2023-12-01", "2023-12-31")
-}
 
 
 #get data
 monthly_shows = use_sql_query(cur=st.session_state.cur,sql_query=get_monthly_number_of_shows_by_city)
+monthly_shows["datetime"] = pd.to_datetime(monthly_shows["year"].astype(str) + "-" + monthly_shows["month"].astype(str), format='%Y-%m')
+monthly_shows = monthly_shows[(monthly_shows["datetime"] < "2024-09-01")]
 
-shanghai_2023 = monthly_shows[(monthly_shows["city"] == "上海") & (monthly_shows["year"] == 2023)]
-shanghai_2023_total = shanghai_2023["total_shows"].sum()
-shanghai_2023["monthly_ratio"] = shanghai_2023["total_shows"] / shanghai_2023_total
 
-beijing_2023 = monthly_shows[(monthly_shows["city"] == "北京") & (monthly_shows["year"] == 2023)]
-beijing_2023_total = beijing_2023["total_shows"].sum()
-beijing_2023["monthly_ratio"] = beijing_2023["total_shows"] / beijing_2023_total
+shanghai = monthly_shows[monthly_shows["city"] == "上海"]
+shanghai_2023 = shanghai.sort_values(by=['datetime'])
+shanghai["monthly_ratio"] = (shanghai["total_shows"] - shanghai["total_shows"].shift(1))*100 / shanghai["total_shows"].shift(1)
 
-chengdu_2023 = monthly_shows[(monthly_shows["city"] == "成都") & (monthly_shows["year"] == 2023)]
-chengdu_2023_total = chengdu_2023["total_shows"].sum()
-chengdu_2023["monthly_ratio"] = chengdu_2023["total_shows"] / chengdu_2023_total
+
+
+beijing = monthly_shows[monthly_shows["city"] == "北京"]
+beijing_2023 = beijing.sort_values(by=['datetime'])
+beijing["monthly_ratio"] =( beijing["total_shows"] - beijing["total_shows"].shift(1))*100 / beijing["total_shows"].shift(1)
+
+
 fig3 = go.Figure()
 fig3.add_trace(go.Bar(
-    x=shanghai_2023["month"],
-    y=shanghai_2023["total_shows"],
+    x=shanghai["datetime"],
+    y=shanghai["total_shows"],
     name="Shanghai",
     yaxis="y"
 ))
 fig3.add_trace(go.Bar(
-    x=beijing_2023["month"],
-    y=beijing_2023["total_shows"],
+    x=beijing["datetime"],
+    y=beijing["total_shows"],
     name="Beijing",
     yaxis="y"
 ))
-fig3.add_trace(go.Bar(
-    x=chengdu_2023["month"],
-    y=chengdu_2023["total_shows"],
-    name="Chengdu",
-    yaxis="y"
-))
+
 
 fig3.add_trace(go.Scatter(
-    x=shanghai_2023["month"],
-    y=shanghai_2023["monthly_ratio"],
+    x=shanghai["datetime"],
+    y=shanghai["monthly_ratio"],
     mode='lines+markers',
     name="Shanghai Ratio",
     yaxis="y2"
 ))
 fig3.add_trace(go.Scatter(
-    x=beijing_2023["month"],
-    y=beijing_2023["monthly_ratio"],
+    x=beijing["datetime"],
+    y=beijing["monthly_ratio"],
     mode='lines+markers',
     name="Beijing Ratio",
     yaxis="y2"
 ))
-fig3.add_trace(go.Scatter(
-    x=chengdu_2023["month"],
-    y=chengdu_2023["monthly_ratio"],
-    mode='lines+markers',
-    name="Chengdu Ratio",
-    yaxis="y2"
-))
+
 
 fig3.update_layout(
     title="Monthly Distribution of Performances in Different Cities (2023)",
@@ -190,3 +246,11 @@ fig3.update_layout(
 )
 
 st.plotly_chart(fig3)
+
+
+####### artists
+
+last_month_shows = use_sql_query(cur=st.session_state.cur,sql_query=musical_list_by_date_range,params=("2024-08-01","2024-09-01"))
+casts = " ".join(last_month_shows["casts"].astype(str))
+cast_list = casts.split(" ")
+st.write(pd.Series(cast_list).value_counts())
