@@ -11,6 +11,8 @@ from plotly.subplots  import make_subplots
 st.set_page_config(
     page_title="Hello",
     page_icon="👋",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 st.write("# Data Workflow Implementation")
