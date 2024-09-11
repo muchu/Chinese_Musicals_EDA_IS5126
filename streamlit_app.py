@@ -1,17 +1,11 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from data_tools import use_sql_query,connect_to_db,get_table_data
-from sql_query import *
+
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots  import make_subplots
 
 
-#connect to the database
-conn,cur = connect_to_db()
-if ['cur','conn'] not in st.session_state:
-    st.session_state.cur = cur
-    st.session_state.conn = conn
 
 
 st.set_page_config(
